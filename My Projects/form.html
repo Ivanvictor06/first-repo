@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            color: white;
+            background-color: rgb(17, 17, 17);
+            border-radius: 50px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 300px;
+            padding:30px 80px;
+            font-family: verdana;
+        }
+        .form input[type="text"], .form input[type="password"]{
+            padding: 10px 25px;
+            border-radius: 25px;
+            background-color: transparent;
+            border: 2px solid grey;
+            outline: none;
+            color: white;
+            text-align: center;
+            width: 200px;
+            transition: 0.3s ease-in-out;
+        }
+        .form input[type="text"]:focus, .form input[type="password"]:focus{
+            width: 280px;
+            border-color: #2ecc71;
+        }
+        input::placeholder{
+            text-align: center;
+        }
+
+        .form input[type="submit"]{
+            padding:10px 25px;
+            border-radius: 20px;
+            background-color: transparent;
+            border: 2px solid grey;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        .form input[type="submit"]:hover{
+             background-color: white;
+             color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <form class="form" action="index.html" method="post">
+        <h1>LOGIN</h1>
+        <input class="name" type="text" placeholder="Username">
+        <input class="password" type="password" placeholder="Password">
+        <input type="submit" value="Login">
+        </form>
+</body>
+</html>

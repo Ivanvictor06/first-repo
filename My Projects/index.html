@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Form</title>
+    <style>
+       body{
+        margin: 0;
+        padding: 0;
+        background: url(download\ \(5\).jpg) no-repeat;
+        background-size: cover;
+       }
+
+       .form{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        padding: 50px;
+       }
+
+       .form h1{
+        font-family: sans-serif;
+        color: white;
+        float: left;
+        border-bottom: 5px solid lightgreen;
+        margin:20px auto;
+       }
+
+       .text{
+        border-bottom: 2px solid green;
+        margin: 20px auto;
+        
+       }
+       input{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+       }
+       input::placeholder{
+        color: gray;
+       }
+
+       .btn{
+        border: 1px solid green;
+        padding: 5px 80px;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Login</h1>
+        <div class="text">
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="text">
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="submit">
+            <input class="btn" type="submit" value="Sign in">
+        </div>
+    </div>
+</body>
+</html>

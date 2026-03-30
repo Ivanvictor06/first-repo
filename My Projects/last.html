@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Form</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+            background: url(download\ \(5\).jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .form-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            padding:10px 50px;
+            background-color: transparent;
+            border: 2px solid rgb(168, 168, 168);
+            border-radius: 10px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 5px;
+        }
+
+        h1{
+            color: white;
+            font-weight: 700;
+        }
+
+     .form-box input[type="text"], .form-box input[type="password"]{
+        border: 2px solid white;
+        background: transparent;
+        padding: 10px 150px 10px 10px;
+        border-radius: 20px;
+        outline: none;
+        color: white;
+     }
+
+     .password{
+        margin-top: 20px;
+        margin-bottom: 0;
+     }
+      
+     .form-box input[type="text"]::placeholder,
+     .form-box input[type="password"]::placeholder{
+        color: white;
+     }
+      
+     .form-box input[type="checkbox"]{
+        border: none;
+        accent-color: white;
+     }
+
+
+     .remember{
+        display: flex;
+        margin-top: 0;
+        color: white;
+        font-weight: 100;
+     }
+     .forgot{
+        margin-left: 60px;
+        font-weight: 200;
+     }
+     .me{
+        font-weight: 200;
+     }
+
+     .form-box input[type="submit"]{
+        border: none;
+        padding: 10px 150px;
+        border-radius: 20px;
+        font-weight: 700;
+        background: white;
+        cursor: pointer;
+     }
+
+     .account{
+        font-weight: 300;
+        color: white;
+     }
+     a{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+     }
+     a:hover{
+        text-decoration: underline;
+     }
+
+
+    </style>
+</head>
+<body>
+    <form class="form-box" action="last.html" method="post">
+        <h1>Login</h1>
+        <div class="text-box">
+            <input type="text" placeholder="Username" required>
+        </div>
+         <div class="password">
+            <input type="password" placeholder="Password" required>
+        </div>
+        <div class="remember">
+         <input type="checkbox">
+             <h4 class="me">Remember me</h4>
+             <h4 class="forgot"><a href="#">Forgot password?</a></h4>
+             </div>
+             <div class="btn">
+                <input type="submit" value="Login">
+             </div>
+             <div class="create">
+                <h4 class="account">Don't have an account?<a href="#">Register</a></h4>
+             </div>
+
+    </form>
+    
+</body>
+</html>
